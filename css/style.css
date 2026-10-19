@@ -1,0 +1,30 @@
+#about
+{
+    background-image: url("../images/Crumpled-Paper.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px;	
+    padding: 0px;
+
+}
+
+#top
+{
+    background-color: #311110;
+    margin: 0;
+    background-size: 100%;
+}
+
+#mains
+{
+}
+
+.section
+{
+    position: relative;
+    max-width: 100%;
+}
+    
+    
+    
