@@ -1,25 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
 #about
 {
+    display: grid;
+    grid-template-columns: minmax(150px, 25%) 1fr;
+    align-items: start;
+    gap: 1.5rem;
     background-image: url("../images/Crumpled-Paper.png");
     background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
     margin: 0px;	
     padding: 0px;
+    height: 110vh;
+    width: 100vw;
+
+    padding-top: 30vh;
+    padding-left: 30vw;
 
 }
 
 #top
 {
-    background-color: #311110;
+    background-color: #2fda54;
     margin: 0;
     background-size: 100%;
 }
 
-#mains
+#face
 {
+    /* margin-top: 90px;
+    margin-left: 30vw; */ 
+    grid-column: 1; 
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+}
+#about-text
+{
+    grid-column: 2;
+    /* margin-left: 60vw; */
+
+    max-width: 50%;
+    color: #0f0f0f;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 
+#about blockquote
+{
+    grid-column: 2;
+}
+
+@media (max-width: 600px)
+{
+    #about
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #face,
+    #about-text,
+    #about blockquote
+    {
+        grid-column: 1;
+    }
+}
 .section
 {
     position: relative;
